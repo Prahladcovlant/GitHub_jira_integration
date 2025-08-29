@@ -171,6 +171,7 @@ func (h *WebhookHandler) handlePushEventDetailed(payload map[string]interface{})
 	//another comment added
 	//added a comment
 	//why not add another comment
+	//lets do some tests
 	commits, ok := payload["commits"].([]interface{})
 	if !ok {
 		h.logger.Error("No commits found in push payload")
