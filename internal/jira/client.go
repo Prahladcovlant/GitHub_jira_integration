@@ -74,6 +74,7 @@ _Created: %s_
 	// Create issue in
 	//issue created
 	//issue added
+	//issue created
 	issueData := jira.Issue{
 		Fields: &jira.IssueFields{
 			Project: jira.Project{
