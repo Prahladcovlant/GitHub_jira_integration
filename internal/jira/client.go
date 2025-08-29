@@ -85,7 +85,7 @@ _Created: %s_
 				Description: "task"
 			},
 			Summary:     fmt.Sprintf("PR #%d: %s", prInfo.PRNumber, prInfo.PRTitle),
-			Description: description,
+			Description: descriptio
 			Labels: []string{
 				"github-pr"
 				fmt.Sprintf("pr-%d", prInfo.PRNumber),
