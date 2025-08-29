@@ -168,6 +168,7 @@ func (h *WebhookHandler) handlePushEventDetailed(payload map[string]interface{})
 	pusherName, _ := pusher["name"].(string)
 
 	// Extract commits from payload
+	//another comment added
 	//added a comment
 	commits, ok := payload["commits"].([]interface{})
 	if !ok {
