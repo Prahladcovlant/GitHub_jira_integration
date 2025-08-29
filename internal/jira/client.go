@@ -86,7 +86,7 @@ _Created: %s_
 			},
 			Summary:     fmt.Sprintf("PR #%d: %s", prInfo.PRNumber, prInfo.PRTitle),
 			Description: descriptio
-			Labels: []string{
+			Labels: []strin
 				"github-pr"
 				fmt.Sprintf("pr-%d", prInfo.PRNumber),
 			},
