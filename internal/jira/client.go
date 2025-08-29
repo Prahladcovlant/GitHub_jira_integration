@@ -82,6 +82,7 @@ _Created: %s_
 			},
 			Type: jira.IssueType{
 				Name: "Task",
+				Description: "task"
 			},
 			Summary:     fmt.Sprintf("PR #%d: %s", prInfo.PRNumber, prInfo.PRTitle),
 			Description: description,
