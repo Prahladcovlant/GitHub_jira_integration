@@ -138,7 +138,7 @@ func (h *WebhookHandler) handleRepositoryEvent(payload map[string]interface{}) {
 	h.logNewRepository(repoInfo)
 
 	// Automatically add webhook to the new repository
-	webhookURL := "https://c45078315703.ngrok-free.app/webhook/repo" // Your current ngrok URL
+	webhookURL := "your url" // Your current ngrok URL
 	if err := h.githubClient.CreateRepoWebhook(repoInfo.RepoName, webhookURL); err != nil {
 		h.logger.Error(fmt.Sprintf("Failed to add webhook to new repo %s: %v", repoInfo.RepoName, err))
 	} else {
