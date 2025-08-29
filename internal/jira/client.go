@@ -74,7 +74,7 @@ _Created: %s_
 	// Create issue in
 	//issue created
 	//issue added
-	//issue created
+	//issue
 	issueData := jira.Issue{
 		Fields: &jira.IssueFields{
 			Project: jira.Project{
@@ -82,6 +82,7 @@ _Created: %s_
 			},
 			Type: jira.IssueType{
 				Name: "Task",
+				Description: "task"
 			},
 			Summary:     fmt.Sprintf("PR #%d: %s", prInfo.PRNumber, prInfo.PRTitle),
 			Description: description,
