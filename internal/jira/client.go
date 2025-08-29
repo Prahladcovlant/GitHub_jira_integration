@@ -71,10 +71,7 @@ _Created: %s_
 		strings.Join(prInfo.FilesChanged, "\n• "),
 		time.Now().Format("2006-01-02 15:04:05"))
 
-	// Create issue in
-	//issue created
-	//issue added
-	//issue
+	// Create issue in Open_PR status
 	issueData := jira.Issue{
 		Fields: &jira.IssueFields{
 			Project: jira.Project{
@@ -82,12 +79,11 @@ _Created: %s_
 			},
 			Type: jira.IssueType{
 				Name: "Task",
-				Description: 
 			},
-			Summary:     fmt.Sprintf("PR #%d, prInfo.PRNumber, prInfo.PRTitle),
-			Description: descriptio
-			Labels: []strin
-				"github-pr"
+			Summary:     fmt.Sprintf("PR #%d: %s", prInfo.PRNumber, prInfo.PRTitle),
+			Description: description,
+			Labels: []string{
+				"github-pr",
 				fmt.Sprintf("pr-%d", prInfo.PRNumber),
 			},
 		},
