@@ -71,7 +71,7 @@ _Created: %s_
 		strings.Join(prInfo.FilesChanged, "\n• "),
 		time.Now().Format("2006-01-02 15:04:05"))
 
-	// Create issue in Open_PR status
+	// Create issue in Open_PR
 	//issue created
 	issueData := jira.Issue{
 		Fields: &jira.IssueFields{
